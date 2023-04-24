@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Contact Us-Form
+        </title>
+        <style>
+            * {
+         box-sizing: border-box;
+       margin: 1px;
+       padding: 2px;
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+       body {
+                background-color: black;
+      }
+      #container {
+       
+       width: 550px;
+     height: 750px; 
+     padding: 1px;
+      margin:auto;       
+ background-color: white;  }
+ .required:after{
+    content: " *";
+    color: red;    
+}
+label, input {
+    flex: 1;
+}
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="form-wrap">
+              <h1 style = "font-size: large;">Contact Us Extended</h1>
+              <form>
+                <div class="form-group" style= "font-size: small;display: flex;" >
+                  <label class="required"> First Name </label> 
+                    <label class="required"> Last Name </label>
+                </div>
+                <div class="form-group" style="display: flex;" >                        
+                      <input type="text" name="firstName" id="first-name" />                      
+                      <input type="text" name="lastName" id="last-name" />
+                </div>  
+                <div class="form-group" style="font-size: small;display: flex;" >                        
+                    <label class="required">Email</label>
+                </div>
+                <div>
+                      <input style="width: 530px;" type="text" name="email" id="email" />
+                </div>   
+                <div class="form-group" style="font-size: small;display: flex;" >                        
+                    <label>Phone Number</label>
+                </div>
+                <div>
+                      <input style="width: 530px;" type="text" name="phone" id="phone" />
+                </div>  
+                <div class="form-group" style="font-size: small;display: flex;" >                        
+                    <label>Address</label>
+                </div>
+                <div>
+                      <input style="width: 530px;height: 100px;" type="text" name="address" id="address" />
+                </div> 
+                <div class="form-group" style="font-size: small;display: flex;" >                        
+                    <label>City</label>
+                </div>
+                <div>
+                      <input style="width: 530px;" type="text" name="city" id="city" />
+                </div> 
+                <div class="form-group" style="font-size: small;display: flex;" >                        
+                    <label>State/Province</label>
+                </div>             
+                <select style="width: 530px;"> <option> AK</option></select> 
+                <div class="form-group" style="font-size: small;display: flex;" >                        
+                    <label>Country</label>
+                </div>             
+                <select style="width: 530px;"> <option> Afghanistan</option></select>  
+                <div class="form-group" style="font-size: small;display: flex;" >                        
+                    <label>Zip/Postal</label>
+                </div>             
+                <input style="width: 530px;" type="text" name="zip" id="city"    /> 
+                <div class="form-group" style="font-size: small;display: flex;" >                        
+                    <label>Comments and Questions</label>
+                </div>             
+                <input style="width: 530px;height: 100px;" type="text" name="comments" id="comments"    />  
+                <button type="submit" class="btn" style="font-size: 12px;">Submit</button>                      
+       </form>
+            </div>
+             
+    </body>
+</html>
